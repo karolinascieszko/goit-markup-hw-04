@@ -107,7 +107,7 @@ img {
 .contact-list-item-link {
   color: var(--font-in-description-color);
 }
-.hero,
+/*.hero,*/
 .footer {
   background-color: var(--background-color-dark);
 }
@@ -166,6 +166,12 @@ img {
 /*===== END HEADER =====*/
 
 /*===== HERO =====*/
+.hero {
+  background-image: url('/images/hero-background/background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
+}
 
 .hero .container {
   display: flex;
