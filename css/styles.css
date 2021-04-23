@@ -185,7 +185,6 @@ img {
 .icon-icon-smartphone:focus,
 .icon-icon-smartphone:active {
   stroke: var(--main-color);
-  fill: var(--main-color);
   stroke-width: 1px;
 }
 
@@ -273,6 +272,31 @@ img {
   color: var(--font-in-description-color);
   width: 270px;
 }
+.icon-icon-antenna-1,
+.icon-icon-clock-1,
+.icon-icon-diagram-1,
+.icon-icon-astronaut-1 {
+  width: 70px;
+  height: 70px;
+  background: red;
+
+  display: block;
+}
+.rect {
+  margin: 25px 100px;
+}
+
+.advantages-list-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list-icons-item {
+  align-items: center;
+  padding-left: 30px;
+}
+.advantages-list-icons-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /*===== END LOREM IPSUM =====*/
 /*===== ABOUT US =====*/
@@ -332,7 +356,28 @@ img {
 /*===== END OUR TEAM =====*/
 
 /*===== OUR CLIENTS =====*/
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+.icon-icon-logo,
+.icon-icon-logo-1,
+.icon-icon-logo-2,
+.icon-icon-logo-3,
+.icon-icon-logo-4,
+.icon-icon-logo-5 {
+  width: 170px;
+  height: 92px;
+}
 
+.clients-list-item {
+  display: flex;
+  display: block;
+  justify-content: space-between;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /*===== END OUR CLIENTS =====*/
 
 /*===== FOOTER =====*/
@@ -359,6 +404,26 @@ img {
 .address-list {
   padding-top: 20px;
 }
+.social-links-header {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-on-dark-theme-color);
+}
+.icon-icon-instagram-2,
+.icon-icon-twitter-1,
+.icon-icon-facebook-1,
+.icon-icon-linkedin-1 {
+  width: 20px;
+  height: 20px;
+}
+.social-links-list {
+  display: flex;
+}
+.social-links {
+}
+
 /*===== PORTFOLIO =====*/
 .buttons-list {
   display: flex;
