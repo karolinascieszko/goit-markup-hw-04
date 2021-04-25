@@ -411,17 +411,33 @@ img {
   text-transform: uppercase;
   color: var(--font-on-dark-theme-color);
 }
-.icon-icon-instagram-2,
-.icon-icon-twitter-1,
-.icon-icon-facebook-1,
-.icon-icon-linkedin-1 {
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  fill: #afb1b8;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-icon {
   width: 20px;
   height: 20px;
 }
-.social-links-list {
-  display: flex;
-}
-.social-links {
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--font-on-dark-theme-color);
+  background-color: var(--main-color);
 }
 
 /*===== PORTFOLIO =====*/
