@@ -15,6 +15,9 @@
   --box-shadow-color-second: rgba(0, 0, 0, 0.14);
   --box-shadow-color-third: rgba(0, 0, 0, 0.2);
   --background-color-team: #f5f4fa;
+  --background-color-advantages-icons: #f5f4fa;
+  --background-color-team: #f5f4fa;
+  --fill-icons: #afb1b8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -164,45 +167,39 @@ img {
 .contact-list-item-link:not(:last-child) {
   padding-right: 30px;
 }
-.icon-icon-smartphone {
+.icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   margin-left: 30px;
+  fill: var(--font-in-description-color);
 }
-.icon-icon-envelope {
+.icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
-  /*stroke: rgba(117, 117, 117, 1);
-  stroke-width: 1px;*/
+  fill: var(--font-in-description-color);
 }
-.icon-icon-envelope:hover,
-.icon-icon-envelope:focus,
-.icon-icon-envelope:active,
-.icon-icon-smartphone:hover,
-.icon-icon-smartphone:focus,
-.icon-icon-smartphone:active {
-  stroke: var(--main-color);
-  stroke-width: 1px;
+.icon-envelope:hover,
+.icon-envelope:focus,
+.icon-smartphone:hover,
+.icon--smartphone:focus {
+  fill: var(--main-color);
 }
 
 /*===== END HEADER =====*/
 
 /*===== HERO =====*/
 .hero {
-  /*background-color: #2f303a, opacity: 0.5;*/
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
-      url('/images/hero-background/background-img.jpg');
+    url('/images/hero-background/background-img.jpg');
 
   background-repeat: no-repeat;
   background-size: 1600px;
-  background-position: 50% 50%;
+  background-position: center;
 }
 
 .hero .container {
@@ -258,7 +255,7 @@ img {
   color: var(--main-font-color);
   margin-bottom: 10px;
   width: 270px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .advantages-list-item-header:not(:last-child) {
   margin-right: 30px;
@@ -283,41 +280,16 @@ img {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
-  fill: #afb1b8;
-
+  background-color: var(--background-color-advantages-icons);
   align-items: center;
   justify-content: center;
 }
 
-/*.icon-icon-antenna-1,
-.icon-icon-clock-1,
-.icon-icon-diagram-1,
-.icon-icon-astronaut-1 {
-  width: 70px;
-  height: 70px;
-  background: red;
-
-  display: block;
-}
-.rect {
-  margin: 25px 100px;
-}
-
-.advantages-list-icons {
-  display: flex;
-  justify-content: space-between;
-}
-.advantages-list-icons-item {
-  align-items: center;
-  padding-left: 30px;
-}
-.advantages-list-icons-item:not(:last-child) {
-  margin-right: 30px;
-}*/
-
 /*===== END LOREM IPSUM =====*/
 /*===== ABOUT US =====*/
+.about-us {
+  padding-bottom: 94px;
+}
 
 .about-us-list {
   display: flex;
@@ -336,6 +308,7 @@ img {
 .team-list {
   display: flex;
   justify-content: space-between;
+  background-color: var(--background-color-light);
 }
 .team-list-item {
   box-shadow: 0px 1px 3px var(--box-shadow-color-first),
@@ -368,67 +341,7 @@ img {
   text-align: center;
 }
 .team {
-  background-color: #f5f4fa;
-}
-/*===== END OUR TEAM =====*/
-
-/*===== OUR CLIENTS =====*/
-
-.clients-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.clients-list-logo {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  background-color: #fff;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 10%;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 94px;
-}
-
-.clients-icon {
-  width: 106px;
-  height: 60px;
-}
-
-.clients-list-logo:hover,
-.clients-list-logo:focus {
-  fill: var(--main-color);
-  border-color: var(--main-color);
-}
-
-/*===== END OUR CLIENTS =====*/
-
-/*===== FOOTER =====*/
-.footer {
-  padding-top: 30px;
-  padding-bottom: 60px;
-}
-.address {
-  font-style: normal;
-}
-.address-list-item-link-street {
-  font-size: 14px;
-  line-height: 1.714;
-  color: var(--font-on-dark-theme-color);
-  text-decoration: none;
-}
-.address-list-item-link-e-mail,
-.address-list-item-link-phone-number {
-  font-size: 14px;
-  line-height: 1.714;
-  color: var(--font-contact-footer-color);
-  text-decoration: none;
-}
-.address-list {
-  padding-top: 20px;
+  background-color: var(--background-color-team);
 }
 .social-links-header {
   font-size: 14px;
@@ -447,8 +360,8 @@ img {
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: #fff;
-  fill: #afb1b8;
+  background-color: var(--background-color-light);
+  fill: var(--fill-icons);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -467,6 +380,68 @@ img {
   fill: var(--font-on-dark-theme-color);
   background-color: var(--main-color);
 }
+/*===== END OUR TEAM =====*/
+
+/*===== OUR CLIENTS =====*/
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-list-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  background-color: var(--background-color-light);
+  fill: var(--fill-icons);
+  border: 1px solid #afb1b8;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-list-logo:hover,
+.clients-list-logo:focus {
+  fill: var(--main-color);
+  border-color: var(--main-color);
+}
+
+/*===== END OUR CLIENTS =====*/
+
+/*===== FOOTER =====*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  font-style: normal;
+}
+.address-list-item-link-street {
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--font-on-dark-theme-color);
+  text-decoration: none;
+  padding-bottom: 9px;
+}
+.address-list-item-link-e-mail,
+.address-list-item-link-phone-number {
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--font-contact-footer-color);
+  text-decoration: none;
+  padding-top: 9px;
+}
+.address-list {
+  padding-top: 20px;
+}
+
 .social-list-dark-theme {
   display: flex;
 }
