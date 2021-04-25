@@ -195,7 +195,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/hero-background/background-img.jpg');
+    url('./images/hero-background/background-img.jpg');
 
   background-repeat: no-repeat;
   background-size: 1600px;
