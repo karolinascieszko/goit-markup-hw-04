@@ -350,13 +350,12 @@ img {
   text-align: center;
 }
 .team {
-  background-color: var(--background-color-team);
-  background-size: 1600px;
+  background-color: #f5f4fa;
 }
 /*===== END OUR TEAM =====*/
 
 /*===== OUR CLIENTS =====*/
-.clients-list {
+/*.clients-list {
   display: flex;
   align-items: center;
 }
@@ -368,16 +367,69 @@ img {
 .icon-icon-logo-5 {
   width: 170px;
   height: 92px;
+}*/
+/*.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  fill: #afb1b8;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.clients-list-item {
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--font-on-dark-theme-color);
+  background-color: var(--main-color);
+}*/
+
+/*.clients-list-item {
   display: flex;
   display: block;
   justify-content: space-between;
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
+}*/
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.clients-list-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  background-color: #fff;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-list-logo:hover,
+.clients-list-logo:focus {
+  fill: var(--main-color);
+  border-color: var(--main-color);
+}
+
 /*===== END OUR CLIENTS =====*/
 
 /*===== FOOTER =====*/
