@@ -373,50 +373,6 @@ img {
 /*===== END OUR TEAM =====*/
 
 /*===== OUR CLIENTS =====*/
-/*.clients-list {
-  display: flex;
-  align-items: center;
-}
-.icon-icon-logo,
-.icon-icon-logo-1,
-.icon-icon-logo-2,
-.icon-icon-logo-3,
-.icon-icon-logo-4,
-.icon-icon-logo-5 {
-  width: 170px;
-  height: 92px;
-}*/
-/*.social-list-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  fill: #afb1b8;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--font-on-dark-theme-color);
-  background-color: var(--main-color);
-}*/
-
-/*.clients-list-item {
-  display: flex;
-  display: block;
-  justify-content: space-between;
-}
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
-}*/
 
 .clients-list {
   display: flex;
@@ -505,9 +461,38 @@ img {
 }
 
 .social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:focus,
+.social-list-link-dark-theme:hover,
+.social-list-link-dark-theme:focus {
   fill: var(--font-on-dark-theme-color);
   background-color: var(--main-color);
+}
+.social-list-dark-theme {
+  display: flex;
+}
+.social-list-link-dark-theme {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  fill: var(--font-on-dark-theme-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-list-item-dark-theme:not(:last-child) {
+  padding-right: 10px;
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.social-links {
+  margin-left: 70px;
 }
 
 /*===== PORTFOLIO =====*/
