@@ -86,14 +86,15 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
+  fill: var(--font-in-description-color);
   text-decoration: none;
 }
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus,
 .navigation-list-item-link:active,
-.contact-list-item-link:hover,
+/*.contact-list-item-link:hover,
 .contact-list-item-link:focus,
-.contact-list-item-link:active,
+.contact-list-item-link:active,*/
 .modal-btn:hover,
 .modal-btn:focus,
 .modal-btn:active,
@@ -172,19 +173,18 @@ img {
   height: 16px;
   margin-right: 10px;
   margin-left: 30px;
-  fill: var(--font-in-description-color);
 }
 .icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--font-in-description-color);
 }
-.icon-envelope:hover,
-.icon-envelope:focus,
-.icon-smartphone:hover,
-.icon--smartphone:focus {
+
+.contact-list-item-link:hover,
+.contact-list-item-link:focus,
+.contact-list-item-link:active {
   fill: var(--main-color);
+  color: var(--main-color);
 }
 
 /*===== END HEADER =====*/
@@ -334,7 +334,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--font-in-description-color);
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .team-list-item-name {
@@ -343,17 +342,11 @@ img {
 .team {
   background-color: var(--background-color-team);
 }
-.social-links-header {
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--font-on-dark-theme-color);
-}
+
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-link {
@@ -366,6 +359,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 .social-icon {
@@ -441,7 +435,13 @@ img {
 .address-list {
   padding-top: 20px;
 }
-
+.social-links-header {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-on-dark-theme-color);
+}
 .social-list-dark-theme {
   display: flex;
 }
